@@ -1,0 +1,53 @@
+<section class="py-5" *ngIf="testimonials.length>0">
+    <p class="text-muted text-center m-auto header">What Our Clients Say</p>
+    <h2 class="text-center text-dark mt-1 mb-0 mx-auto">Testimonials</h2>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <ng-container *ngFor="let row of [].constructor(numberOfRounds);let k=index">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" attr.data-bs-slide-to="{{k}}" [ngClass]="{'active':k ===0}" aria-current="true"></button>
+        </ng-container>
+      </div>
+      <div class="carousel-inner">
+        <ng-container *ngFor="let row of [].constructor(numberOfRounds);let i=index">
+          <div class="carousel-item" [ngClass]="{'active': i === 0}">
+            <div class="container mt-3 mb-5">
+              <div class="row g-2 justify-content-center">
+  
+                <ng-container *ngFor="let item of [].constructor(3); let j = index">
+                  <div class="col-md-4 p-3" *ngIf="testimonials[i*3 + j]">
+                    <div class="card p-3">
+                      <ul class="list-unstyled mb-2 d-flex justify-content-end text-warning mb-0">
+                        <ng-container *ngFor="let x of [].constructor(testimonials[i*3 + j].stars);">
+                          <li><i class="bi bi-star-fill"></i></li>
+                        </ng-container>
+                        <ng-container *ngFor="let y of [].constructor(5 - testimonials[i*3 + j].stars);">
+                          <li><i class="bi bi-star"></i></li>
+                        </ng-container>
+                      </ul>
+                      <p class="text-muted">
+                        <i class="bi bi-quote pe-2"></i>
+                        {{testimonials[i*3 + j].quote}}
+                      </p>
+                      <h5 class="mb-1">{{testimonials[i*3 + j].name}}</h5>
+                      <p class="mb-1 date text-muted">{{testimonials[i*3 + j].date}}</p>
+                        <i class="bi bi-check-all"></i>
+                    </div>
+                  </div>
+                </ng-container>
+  
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  

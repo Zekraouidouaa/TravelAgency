@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+  }
+ 
+  header a {
+    color: #eee;
+    margin-right: 40px;
+    text-shadow: 0 0 2px #5a5a5a;
+  }
+  .logo {
+    margin-right: auto !important;
+    font-weight: 700;
+  }
+
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #e75e5e;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.solid-nav {
+  background-color: #fff;
+  box-shadow: 0px 1px 9px #e5e5e5;
+  transition: background-color 0.2s linear;
+}
+
+.solid-nav a {
+  color: #666;
+  text-shadow: 0 0 2px #eeeeee;
+}

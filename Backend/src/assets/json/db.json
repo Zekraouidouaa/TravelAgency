@@ -1,0 +1,129 @@
+{
+  "travels": [
+    {
+      "id": "fb78",
+      "location": "Kars Istanbul",
+      "date": "2024-05-17",
+      "periode": 9,
+      "price": 500,
+      "other": "...",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!",
+      "image": "C:\\fakepath\\img4.jpg"
+    },
+    {
+      "id": "1b26",
+      "location": "Galapagos Islands",
+      "date": "2024-05-17",
+      "periode": 5,
+      "price": 980,
+      "other": "...",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!",
+      "image": "C:\\fakepath\\img4.jpg"
+    },
+    {
+      "id": "785b",
+      "location": "Kasbah Algiers",
+      "date": "2024-05-17",
+      "periode": 10,
+      "price": 450,
+      "other": "...",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!",
+      "image": "C:\\fakepath\\img4.jpg"
+    },
+    {
+      "id": "87b0",
+      "location": "Paris France",
+      "date": "2024-05-17",
+      "periode": 15,
+      "price": 1500,
+      "other": "...",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!",
+      "image": "C:\\fakepath\\img4.jpg"
+    },
+    {
+      "id": "b299",
+      "location": "London",
+      "date": "2024-05-10",
+      "periode": 10,
+      "price": 500,
+      "other": "...",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!",
+      "image": "C:\\fakepath\\img4.jpg"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "80b8",
+      "name": "douaa",
+      "phone": 986566,
+      "location": "Paris France",
+      "date": "2024-05-16",
+      "members": 2,
+      "description": "desc",
+      "price": "990"
+    },
+    {
+      "id": "7797",
+      "name": "douaa",
+      "phone": "875376",
+      "location": "Galapagos Islands",
+      "date": "2024-05-10",
+      "members": 2,
+      "description": "",
+      "price": "550"
+    },
+    {
+      "id": "0acc",
+      "name": "douaa",
+      "phone": 8966,
+      "location": "Kars Istanbul",
+      "date": "2024-05-15",
+      "members": 4,
+      "description": "desc",
+      "price": 268
+    },
+    {
+      "id": "ee74",
+      "name": "douaa",
+      "phone": 87687889,
+      "location": "Kasbah Algiers",
+      "date": "2024-05-24",
+      "members": 1,
+      "description": "",
+      "price": 450
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 3,
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur.",
+      "name": "Patrick Jane",
+      "date": "04 June 2024"
+    },
+    {
+      "stars": 5,
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur.",
+      "name": "Anna Deynah",
+      "date": "04 June 2024"
+    },
+    {
+      "stars": 4,
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur.",
+      "name": "Will Smith",
+      "date": "04 June 2024"
+    },
+    {
+      "stars": 4,
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur.",
+      "name": "Will Smith",
+      "date": "04 June 2024"
+    },
+    {
+      "id": "a115",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur ad velit ab hic tenetur.",
+      "name": "douaa",
+      "stars": 5,
+      "date": "2024-05-18"
+    }
+  ]
+}

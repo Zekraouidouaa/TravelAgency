@@ -1,0 +1,64 @@
+
+<div class="card shadow border-0 mb-7 mt-5 mx-5">
+    <div class="card-header">
+        <h5 class="mb-0">Reservations</h5>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover table-nowrap">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Members</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let reservation of reservationData">
+                    <td>
+                        <p class="text-heading font-semibold">
+                            {{reservation.name}}
+                        </p>
+                    </td>
+                    <td>
+                        <p class="text-heading font-semibold">
+                            {{reservation.phone}}
+                        </p>
+                    </td>
+                    <td>
+                        {{reservation.date}}
+                    </td>
+                    <td>
+                        <p class="text-heading font-semibold">
+                            
+                            {{reservation.location}}
+                        </p>
+                    </td>
+                    <td>
+                        
+                        {{reservation.price}} DZD
+                    </td>
+                    <td>
+                        <span class="badge badge-lg badge-dot">
+                            <i class="bg-success"></i>{{reservation.members}} Person
+                        </span>
+                    </td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-success">
+                            <i class="bi bi-check-lg"></i></button>
+                        <button type="button" class="btn btn-danger">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer border-0 py-5">
+        <span class="text-muted text-sm">Showing all reservations found</span>
+    </div>
+</div>

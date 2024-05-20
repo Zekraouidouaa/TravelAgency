@@ -1,0 +1,62 @@
+
+  .header {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  h2{
+      position: relative;
+      width: fit-content;
+  }
+  h2::after{
+      content: '';
+      left: 30%;
+      bottom: 0;
+      width: 40%;
+      height: 2px;
+      border-radius: 5px;
+      position: absolute;
+      background: var(--primary-color);
+  }
+  .card {
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #fdfdfd;
+    box-shadow: 0 6px 7px #66666650;
+    position: relative;
+  }
+  .bi-check-all {
+    position: absolute;
+    bottom: 0rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+    font-size: 3rem;
+  }
+  
+  .bi-star-fill,
+  .bi-star {
+    color: var(--primary-color);
+  }
+  li {
+    margin: auto 2px;
+    font-size: 14px;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+  }
+  .date {
+    font-size: 12px;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237089a8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+   
+  .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237089a8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+  
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }

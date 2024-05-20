@@ -1,0 +1,47 @@
+<section class="vh-100">
+    <div class="h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100 w-100 m-auto">
+        <div class="col p-0">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="card-body py-3 px-5 text-black">
+  
+                  <form>
+  
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="bi bi-send-fill" style="color: #ff4775;font-size: 25px;margin-right: 10px;"></i>
+                      <span class="h1 fw-bold mb-0" style="color: #5e5e5e;">Travel Agency</span>
+                    </div>
+  
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+  
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label text-muted" for="form2Example17">Email</label>
+                      <input name="email" [(ngModel)]="email" type="email" id="form2Example17" class="form-control form-control-lg" />
+                    </div>
+  
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label text-muted" for="form2Example27">Password</label>
+                      <input name="password" [(ngModel)]="password" type="password" id="form2Example27" class="form-control form-control-lg" />
+                    </div>
+                    
+                    <p class="text-danger">{{error}}</p>
+                    
+                    <div class="pt-1 mb-4">
+                      <button (click)="navigate();" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-lg btn-block" type="button">Login</button>
+                    </div>
+                  </form>
+  
+                </div>
+              </div>
+              
+              <div class="col-md-6 d-none d-md-block">
+                <img src="https://images.pexels.com/photos/7957930/pexels-photo-7957930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="login form" class="img-fluid vh-100 w-100"/>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>

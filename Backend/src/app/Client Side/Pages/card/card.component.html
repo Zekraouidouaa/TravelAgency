@@ -1,0 +1,97 @@
+<div class="container p-0">
+    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="text-center">
+                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                        <img class="shadow" src="assets/images/img1.jpg"
+                            alt="img">
+                    </div>
+                </div>
+       
+                <div class="card-body">
+                    <div class="my-2">
+                        <h1>{{travelData[0].location}}</h1>
+                    </div>
+                    <div class="mb-3 desc d-inline-flex">
+                        <h2 class="text-uppercase price">{{travelData[0].price}} DZD</h2>
+                        <h2 class="text-uppercase period">{{travelData[0].periode}} Days</h2>
+                    </div>
+                    <div class="box">
+                        <button type="button" class="btn btn-danger" [routerLink]="['/travels']">Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="text-center">
+                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                        <img class="shadow" src="assets/images/img3.jpg"
+                            alt="img">
+                    </div>
+                </div>
+       
+                <div class="card-body">
+                    <div class="my-2">
+                        <h1>{{travelData[1].location}}</h1>
+                    </div>
+                    <div class="mb-3 desc d-inline-flex">
+                        <h2 class="text-uppercase price">{{travelData[1].price}} DZD</h2>
+                        <h2 class="text-uppercase period">{{travelData[1].periode}} Days</h2>
+                    </div>
+                    <div class="box">
+                        <button type="button" class="btn btn-danger" [routerLink]="['/travels']">Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="text-center">
+                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                        <img class="shadow" src="assets/images/img2.jpg"
+                            alt="img">
+                    </div>
+                </div>
+       
+                <div class="card-body">
+                    <div class="my-2">
+                        <h1>{{travelData[2].location}}</h1>
+                    </div>
+                    <div class="mb-3 desc d-inline-flex">
+                        <h2 class="text-uppercase price">{{travelData[2].price}} DZD</h2>
+                        <h2 class="text-uppercase period">{{travelData[2].periode}} Days</h2>
+                    </div>
+                    <div class="box">
+                        <button type="button" class="btn btn-danger" [routerLink]="['/travels']">Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="text-center">
+                    <div class="img-hover-zoom img-hover-zoom--colorize">
+                        <img class="shadow" src="assets/images/img11.jpg"
+                            alt="img">
+                    </div>
+                </div>
+       
+                <div class="card-body">
+                    <div class="my-2">
+                        <h1>{{travelData[3].location}}</h1>
+                    </div>
+                    <div class="mb-3 desc d-inline-flex">
+                        <h2 class="text-uppercase price">{{travelData[3].price}} DZD</h2>
+                        <h2 class="text-uppercase period">{{travelData[3].periode}} Days</h2>
+                    </div>
+                    <div class="box">
+                        <button type="button" class="btn btn-danger" [routerLink]="['/travels']">Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

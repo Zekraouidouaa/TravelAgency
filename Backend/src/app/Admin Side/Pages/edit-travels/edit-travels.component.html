@@ -1,0 +1,70 @@
+<div class="container">
+	<header class="header">
+		<p id="description" class="text-center">
+			Add Travel
+		</p>
+	</header>
+	<div class="form-wrap">	
+		<form id="survey-form" [formGroup]="travelForm">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="location-label" for="location">Location</label>
+						<input type="text" name="location" formControlName="location" id="location" placeholder="Enter location" class="form-control" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="date-label" for="date">Date</label>
+						<input type="date" name="date"  formControlName="date" id="date" placeholder="Enter date" class="form-control" required>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="periode-label" for="periode">Periode </label>
+						<input type="number" name="periode" formControlName="periode" id="periode" min="1" class="form-control" placeholder="Periode" >
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="price-label" for="price">Price </label>
+						<input type="number" name="price" formControlName="price" id="price" min="0" class="form-control" placeholder="Price" >
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="image-label" for="image">Image </label>
+						<input type="file" name="image" formControlName="image" id="image" min="0" class="form-control" placeholder="Image" >
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="other-label" for="other">Other </label>
+						<input type="text" name="other" formControlName="other" id="other" min="0" class="form-control" placeholder="Other" >
+					</div>
+				</div>
+			</div>
+		
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Description</label>
+						<textarea  formControlName="description" id="description" class="form-control" name="description" placeholder="Enter description here..."></textarea>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-4" style="width: 100%;">
+					<button (click)="addTravel(this.travelForm)" type="submit" id="submit" class="btn btn-primary btn-block" style="display: block;margin: auto;">Submit</button>
+				</div>
+			</div>
+
+		</form>
+	</div>	
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+	<header class="header">
+		<p id="description" class="text-center">
+			Add Testimonilas
+		</p>
+	</header>
+	<div class="form-wrap">	
+		<form id="survey-form" [formGroup]="testimonialsForm">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="name-label" for="name">Name</label>
+						<input type="text" name="name" formControlName="name" id="name" placeholder="Enter name" class="form-control" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="date-label" for="date">Date</label>
+						<input type="date" name="date"  formControlName="date" id="date" placeholder="Enter date" class="form-control" required>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="stars-label" for="stars">Stars </label>
+						<input type="number" name="stars" formControlName="stars" id="stars" min="1" class="form-control" placeholder="Stars" >
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Quote</label>
+						<textarea  formControlName="quote" id="quote" class="form-control" name="quote" placeholder="Enter quote here..."></textarea>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-4" style="width: 100%;">
+					<button (click)="addTestimonials(this.testimonialsForm)" type="submit" id="submit" class="btn btn-primary btn-block" style="display: block;margin: auto;">Submit</button>
+				</div>
+			</div>
+
+		</form>
+	</div>	
+</div>

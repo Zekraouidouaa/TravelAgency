@@ -1,0 +1,28 @@
+img {
+  width: 50px;
+  margin: 5px;
+}
+.douaa {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.douaa div {
+  margin: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 24px;
+}
+h2,
+h3 {
+  color: rgb(30, 41, 50);
+}
+p {
+  font-size: 14px;
+}

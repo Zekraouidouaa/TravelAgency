@@ -1,0 +1,84 @@
+<section class="intro">
+    <div class="bg-image-vertical h-100" style="background-color: #EFD3E4;
+            background-image: url(https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+          ">
+      <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+              <div class="card" style="border-radius: 1rem;">
+                <div class="card-body py-3 px-5">
+  
+                  <h1 class="mb-5 text-center">Reservation</h1>
+  
+                  <form [formGroup]="reservationForm">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    
+                      <div class="form-outline mb-4">
+                            <label class="form-label" for="name">Full name</label>
+                          <input type="text" formControlName="name" id="name" class="form-control" required="true" />
+                          
+                    </div>
+  
+                    <!-- Number input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input type="number" formControlName="phone" id="phone" class="form-control"  required="true"/>
+                      </div>
+    
+                    <!-- Text input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="location">Trip</label>
+                      <select class="form-select" formControlName="location" id="location" aria-label="Default select example" required="true">
+                        <ng-container *ngFor="let item of travelData">
+                          <option [value]="item.id">{{item.location}}</option>
+                        </ng-container>
+                      </select>
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                      <label id="form-label" for="date">Date</label>
+                      <input type="date" name="date" formControlName="date" id="date" placeholder="Enter date" class="form-control"  required="true">
+                    </div>
+  
+                    <!-- Text input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="members">Number of travelers</label>
+                      <input type="number" formControlName="members" id="members" class="form-control" required="true"/>
+                    </div>
+  
+                   
+  
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="description">Additional information</label>
+                      <textarea class="form-control" formControlName="description" id="description" rows="4"></textarea>
+                    </div>
+  
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form6Example8"
+                        checked
+                      />
+                      <label class="form-check-label" for="form6Example8"> Do you agree on our terms? </label>
+                    </div>
+  
+                    <!-- Submit button -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                    <button style="width: 200px;" (click)="addReservation(this.reservationForm)" type="submit" class="btn btn-danger btn-rounded btn-block">Reserve</button>
+                    </div>
+                </form>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
